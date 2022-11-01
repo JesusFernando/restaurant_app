@@ -17,29 +17,27 @@ const ButtonIconInBox({ Key? key,
   final Color colorText;
 
   @override
-  Widget build(BuildContext context){
-    return Container(
-      margin: const EdgeInsets.only(left: 10.0),
-      alignment: Alignment.center,
-      height: 60.0,
-      width: width,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(40.0),
-        color: colorContainer,
+  Widget build(BuildContext context) => Container(
+    margin: const EdgeInsets.only(left: 10.0),
+    alignment: Alignment.center,
+    height: 60.0,
+    width: width,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(40.0),
+      color: colorContainer,
+    ),
+    child: ListTile(
+      leading: Icon(
+        icon,
+        size: 35.0,
+        color: colorIcon,
       ),
-      child: ListTile(
-        leading: Icon(
-          icon,
-          size: 35.0,
-          color: colorIcon,
+      title: Text(
+        name,
+        style: TextStyle(
+          color: colorText,
         ),
-        title: Text(
-          name,
-          style: TextStyle(
-            color: colorText,
-          ),
-        ),
-      )
-    );
-  }
+      ),
+    ),
+  );
 }

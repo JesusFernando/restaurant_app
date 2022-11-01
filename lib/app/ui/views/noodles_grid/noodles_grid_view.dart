@@ -8,29 +8,27 @@ class NoodlesGridView extends StatelessWidget {
 const NoodlesGridView({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context){
-    return GetBuilder<NoodlesGridController>(
-      builder: (controller) => Scaffold(
-        appBar: AppBar(
-          elevation: 0,
-          centerTitle: true,
-          title: const Text(
-            "Noodles & Ramen",
-            style: TextStyle(
-              fontWeight: FontWeight.bold
-            )
+  Widget build(BuildContext context) => GetBuilder<NoodlesGridController>(
+    builder: (controller) => Scaffold(
+      appBar: AppBar(
+        elevation: 0,
+        centerTitle: true,
+        title: const Text(
+          "Noodles & Ramen",
+          style: TextStyle(
+            fontWeight: FontWeight.bold
           ),
-          backgroundColor: Colors.white,
-          foregroundColor: Colors.black,
         ),
-        body: Column(
-          children: const [
-            ThreeBottons(),
-            SizedBox(height: 20.0),
-            MealsGrid(),
-          ],
-        )
-      )
-    );
-  }
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+      ),
+      body: Column(
+        children: const [
+          ThreeBottons(),
+          SizedBox(height: 20.0),
+          MealsGrid(),
+        ],
+      ),
+    ),
+  );
 }

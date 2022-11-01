@@ -1,8 +1,6 @@
-//Limpio
 import 'package:flutter/material.dart';
 import 'package:restaurant_delivery_app/app/routes/app_routes.dart';
 import 'package:restaurant_delivery_app/app/ui/components/charts/meal_previsualization.dart';
-import 'package:restaurant_delivery_app/app/ui/views/noodles/noodles_view.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 
 class HorizontalListMeals extends StatefulWidget {
@@ -17,6 +15,7 @@ class HorizontalListMealsState extends State<HorizontalListMeals> {
 
   @override
   Widget build(BuildContext context){
+    //Variable
     List<Widget> cardMeal = [
           const MealPrevisualization(
             urlImage: 'https://dfwblobstorage.blob.core.windows.net/images/Recipe/PF641SALADX1132-wc.jpg',

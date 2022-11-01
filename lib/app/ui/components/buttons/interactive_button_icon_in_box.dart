@@ -22,22 +22,20 @@ InteractiveButtonIconInBox({ Key? key,
   }
 
   @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap:(){
-        color.value = const Color.fromARGB(255, 0, 0, 1);
-        colorIcon.value = const Color.fromARGB(255, 255, 255, 255);
-        colorText.value = Colors.white;
-        scrollToItem();
-      },
-      child: Obx(() =>ButtonIconInBox(
-          name: name,
-          icon: icon,
-          colorIcon: colorIcon.value,
-          colorContainer: color!.value,
-          colorText: colorText!.value
-        ),
+  Widget build(BuildContext context) => GestureDetector(
+    onTap:(){
+      color.value = const Color.fromARGB(255, 0, 0, 1);
+      colorIcon.value = const Color.fromARGB(255, 255, 255, 255);
+      colorText.value = Colors.white;
+      scrollToItem();
+    },
+    child: Obx(() =>ButtonIconInBox(
+        name: name,
+        icon: icon,
+        colorIcon: colorIcon.value,
+        colorContainer: color!.value,
+        colorText: colorText!.value
       ),
-    );
-  }
+    ),
+  );
 }

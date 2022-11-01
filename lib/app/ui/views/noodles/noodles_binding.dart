@@ -6,5 +6,4 @@ class NoodlesBinding extends Bindings {
   void dependencies() {
     Get.lazyPut(() => NoodlesController());
   }
-  
 }

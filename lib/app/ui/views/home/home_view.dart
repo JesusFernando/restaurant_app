@@ -1,4 +1,3 @@
-//Limpio
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:restaurant_delivery_app/app/ui/views/home/home_controller.dart';
@@ -24,10 +23,8 @@ const HomeView({ Key? key }) : super(key: key);
           SizedBox(height: 15.0),
           HorizontalListMeals(),
           AppBottomNavigationBar(),
-          // HorizontalListView(),
-          // VerticalListView(),
         ],
-      )
+      ),
     ),
   );
 }

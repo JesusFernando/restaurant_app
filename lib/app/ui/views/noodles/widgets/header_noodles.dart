@@ -35,7 +35,7 @@ const HeaderNoodles({ Key? key }) : super(key: key);
           colorIcon: Colors.white,
           icon: Icons.more_horiz,
         ),
-      )
-    ]
+      ),
+    ],
   );
 }

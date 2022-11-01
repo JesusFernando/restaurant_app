@@ -9,17 +9,15 @@ const MealDescription(
   final String mealDescription;
 
   @override
-  Widget build(BuildContext context){
-    return Container(
-      height: 50.0,
-      width: 350.0,
-      alignment: Alignment.center,
-      child: Text(
-          mealDescription,
-          style: const TextStyle(
-          fontSize: 15.0,
-        )
+  Widget build(BuildContext context) => Container(
+    height: 50.0,
+    width: 350.0,
+    alignment: Alignment.center,
+    child: Text(
+        mealDescription,
+        style: const TextStyle(
+        fontSize: 15.0,
       ),
-    );
-  }
+    ),
+  );
 }

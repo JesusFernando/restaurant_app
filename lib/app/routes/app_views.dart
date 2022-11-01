@@ -12,17 +12,17 @@ abstract class AppViews {
     GetPage(
       name: AppRoutes.HOME,
       page: ()=> const HomeView(), 
-      binding: HomeBinding()
+      binding: HomeBinding(),
     ),
     GetPage(
       name: AppRoutes.NOODLES,
       page: ()=> const NoodlesView(), 
-      binding: NoodlesBinding()
+      binding: NoodlesBinding(),
     ),
     GetPage(
       name: AppRoutes.NOODLES_GRID,
       page: ()=> const NoodlesGridView(), 
-      binding: NoodlesGridBinding()
+      binding: NoodlesGridBinding(),
     ),
   ];
 }

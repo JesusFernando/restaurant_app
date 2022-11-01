@@ -1,4 +1,3 @@
-//Limpio
 import 'package:flutter/material.dart';
 
 class IconNavigationBar extends StatelessWidget {
@@ -10,14 +9,12 @@ const IconNavigationBar({ Key? key,
   final IconData icon;
   final Color color;
   @override
-  Widget build(BuildContext context){
-    return IconButton(
-      icon: Icon(
-        icon,
-        color: color,
-        size: 35.0,
-      ),
-      onPressed: (){},
-    );
-  }
+  Widget build(BuildContext context) => IconButton(
+    icon: Icon(
+      icon,
+      color: color,
+      size: 35.0,
+    ),
+    onPressed: (){},
+  );
 }

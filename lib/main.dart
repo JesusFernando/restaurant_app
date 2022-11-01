@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:restaurant_delivery_app/app/routes/app_routes.dart';
 import 'package:restaurant_delivery_app/app/routes/app_views.dart';
-import 'package:restaurant_delivery_app/app/ui/views/home/home_view.dart';
 
 void main() {
   runApp(const MyApp());

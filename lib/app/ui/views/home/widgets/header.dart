@@ -1,4 +1,3 @@
-// Limpio
 import 'package:flutter/material.dart';
 import 'package:restaurant_delivery_app/app/ui/views/home/widgets/header_app_bar.dart';
 import 'package:restaurant_delivery_app/app/ui/views/home/widgets/question_text.dart';
@@ -8,8 +7,7 @@ class Header extends StatelessWidget {
 const Header({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context){
-    return Container(
+  Widget build(BuildContext context) => Container(
       width: double.infinity,
       height: 340.0,
       padding: const EdgeInsets.only(
@@ -37,7 +35,6 @@ const Header({ Key? key }) : super(key: key);
           SizedBox(height:20.0),
           SearchBar(),
         ],
-      )
+      ),
     );
-  }
 }

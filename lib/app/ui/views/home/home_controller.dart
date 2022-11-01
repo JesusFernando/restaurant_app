@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class HomeViewController extends GetxController {
@@ -19,9 +18,4 @@ class HomeViewController extends GetxController {
     // TODO: implement onClose
     super.onClose();
   }
-  
-  // Variables
-
-  // Funciones
-
 }

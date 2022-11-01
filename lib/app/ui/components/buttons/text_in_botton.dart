@@ -1,4 +1,3 @@
-//Limpio
 import 'package:flutter/material.dart';
 
 class TextInBotton extends StatelessWidget {
@@ -17,8 +16,7 @@ const TextInBotton({ Key? key,
   final Color colorText;
 
   @override
-  Widget build(BuildContext context){
-    return Container(
+  Widget build(BuildContext context) => Container(
       alignment: Alignment.center,
       margin: const EdgeInsets.only(left: 10.0, top: 10.0),
       height: height,
@@ -32,8 +30,7 @@ const TextInBotton({ Key? key,
         "${text}",
         style: TextStyle(
           color: colorText,
-        )
+        ),
       ),
     );
-  }
 }

@@ -12,17 +12,15 @@ const TitleAndSubtitleButton({ Key? key,
   final double width;
 
   @override
-  Widget build(BuildContext context){
-    return Container(
-      height: 70,
-      width: width,
-      decoration: const BoxDecoration(
-        color: Colors.transparent
-      ),
-      child: ListTile(
-        title: Text(title),
-        subtitle: Text(subtitle)
-      ),
-    );
-  }
+  Widget build(BuildContext context) => Container(
+    height: 70,
+    width: width,
+    decoration: const BoxDecoration(
+      color: Colors.transparent
+    ),
+    child: ListTile(
+      title: Text(title),
+      subtitle: Text(subtitle)
+    ),
+  );
 }
