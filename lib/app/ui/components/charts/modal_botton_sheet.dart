@@ -86,7 +86,7 @@ const ModalBottomSheet({ Key? key,
                         child: const TextInBotton(
                           // ignore: prefer_adjacent_string_concatenation, prefer_interpolation_to_compose_strings
                           text: 'Add to cart ' + ' ' + ' \$650',
-                          height: 60.0,
+                          height: 55.0,
                           width: 200.0,
                           color: Colors.black,
                           colorText: Colors.white,
