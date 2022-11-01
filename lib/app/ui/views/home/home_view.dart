@@ -12,25 +12,22 @@ class HomeView extends StatelessWidget {
 const HomeView({ Key? key }) : super(key: key);
 
   @override
-  Widget build(BuildContext context){
-    return GetBuilder<HomeViewController>(
-      init: HomeViewController(),
-      builder: (controller) => Scaffold(
-        body: Column(
-          children: const [
-            Header(),
-            SizedBox(height: 20.0),
-            HorizontalList(),
-            SizedBox(height: 15.0),
-            Slogan(),
-            SizedBox(height: 15.0),
-            HorizontalListMeals(),
-            AppBottomNavigationBar(),
-            // HorizontalListView(),
-            // VerticalListView(),
-          ],
-        )
-      ),
-    );
-  }
+  Widget build(BuildContext context) => GetBuilder<HomeViewController>(
+    builder: (controller) => Scaffold(
+      body: Column(
+        children: const [
+          Header(),
+          SizedBox(height: 20.0),
+          HorizontalList(),
+          SizedBox(height: 15.0),
+          Slogan(),
+          SizedBox(height: 15.0),
+          HorizontalListMeals(),
+          AppBottomNavigationBar(),
+          // HorizontalListView(),
+          // VerticalListView(),
+        ],
+      )
+    ),
+  );
 }

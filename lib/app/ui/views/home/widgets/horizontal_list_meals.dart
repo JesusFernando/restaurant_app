@@ -1,5 +1,6 @@
 //Limpio
 import 'package:flutter/material.dart';
+import 'package:restaurant_delivery_app/app/routes/app_routes.dart';
 import 'package:restaurant_delivery_app/app/ui/components/charts/meal_previsualization.dart';
 import 'package:restaurant_delivery_app/app/ui/views/noodles/noodles_view.dart';
 import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
@@ -25,9 +26,9 @@ class HorizontalListMealsState extends State<HorizontalListMeals> {
           ),
           GestureDetector(
             onTap: (){
-              Navigator.push(
+              Navigator.pushNamed(
                 context,
-                MaterialPageRoute(builder: (context) => const NoodlesView())
+                AppRoutes.NOODLES
               );
             },
             child: const MealPrevisualization(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:restaurant_delivery_app/app/routes/app_routes.dart';
 import 'package:restaurant_delivery_app/app/ui/components/charts/delivery_cost.dart';
 import 'package:restaurant_delivery_app/app/ui/components/charts/delivery_time.dart';
 import 'package:restaurant_delivery_app/app/ui/components/charts/dish_previsualization.dart';
@@ -31,9 +32,9 @@ const ContentNoodles({ Key? key }) : super(key: key);
           const SizedBox(height: 15.0),
           GestureDetector(
             onTap: (){
-              Navigator.push(
+              Navigator.pushNamed(
                 context,
-                MaterialPageRoute(builder: (context) => const NoodlesGridView())
+                AppRoutes.NOODLES_GRID
               );
             },
             child: Row(

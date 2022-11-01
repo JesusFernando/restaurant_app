@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
 
-class NoodlesController extends GetxController {
+class NoodlesGridController extends GetxController {
   @override
   void onInit() {
     // TODO: implement onInit
