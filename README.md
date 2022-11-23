@@ -1,7 +1,7 @@
 
 # Restaurant Delivery App
 
-Un reto dejado por Gustavo Quino de VALTX
+Un reto dado por Gustavo Quino de VALTX
 
 ## Screenshots de la aplicación
 ### Pantalla 1
